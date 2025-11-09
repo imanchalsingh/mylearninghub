@@ -1,5 +1,3 @@
-//create a footer with text  "© 2024 My Learning Hub. All rights reserved." centered at bottom with light gray background and dark gray text, responsive. and also add some padding. and also add a hover effect to change background to slightly darker gray. and also add a smooth transition effect for background color change. 
-
 import React from 'react';
 
 const Footer = () => {

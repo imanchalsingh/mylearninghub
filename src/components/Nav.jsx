@@ -18,7 +18,6 @@ const Nav = () => {
         };
     }, []);
     return (
-        // turned text from left to center with style, colorfull, animated, some handwritten font. also add a border in same text color shows when scqrolled. use text-2xl md:text-2xl font-handwriting font-bold text-transparent bg-clip-text bg-linear-to-r from-teal-500 via-blue-500 to-purple-500 animate-gradient-x this color when scrolled otherwise only gradiant colors.
         <nav className={`fixed w-full top-0 left-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-white dark:bg-gray-900 shadow-md border-b border-gray-200 dark:border-gray-700' : 'bg-transparent'} `}>
             <div className="container mx-auto px-3 md:px-6 py-3 flex justify-center">
                 <h1
