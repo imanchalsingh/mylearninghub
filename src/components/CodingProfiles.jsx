@@ -16,13 +16,10 @@ const CodingProfiles = () => {
 
 
   return (
-    <section id="coding-profiles" className="py-20 bg-linear-to-br from-blue-50 to-teal-50 dark:from-gray-900 dark:to-gray-800">
+    <section id="coding-profiles" className="py-20 bg-linear-to-br from-blue-50 to-teal-50 dark:from-gray-900 dark:to-gray-800 font-['Kanit'] transition-colors duration-300">
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8 md:mb-16">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-3">
-              My Learning & Coding Profiles
-            </h2>
             <p className="text-gray-600 dark:text-gray-400 max-w-xl mb-4">
               A collection of my coding profiles across various platforms showcasing my learning journey and coding activities.
             </p>

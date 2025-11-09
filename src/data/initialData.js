@@ -172,7 +172,7 @@ export const profiles = [
     id: 22,
     name: "Roadmap.sh",
     description: "Developer roadmaps and learning paths",
-    link: "https://roadmap.sh/profile/imanchalsingh",
+    link: "https://roadmap.sh/u/imanchalsingh",
     icon: "https://cdn-1.webcatalog.io/catalog/roadmap-sh/roadmap-sh-icon-filled-256.png?v=1687417626361",
     type: "Learning-Platform",
   },
@@ -205,7 +205,7 @@ export const profiles = [
     name: "TutorialsPoint",
     description: "Programming tutorials and courses",
     link: "https://www.tutorialspoint.com/practice/dashboard.php",
-    icon: "https://play-lh.googleusercontent.com/F10OOHNkeNbOf5x9DYpoihAIkLRlSMxCsPHyCErXgm0oM2gZtJwVymJIZoN59v4JJWBZ",
+    icon: "https://cdn-1.webcatalog.io/catalog/tutorials-point/tutorials-point-icon.png",
     type: "Learning-Platform",
   },
   {
@@ -232,4 +232,21 @@ export const profiles = [
     icon: "https://cdn-icons-png.flaticon.com/512/2620/2620735.png",
     type: "Learning-Platform",
   },
+  {
+    id: 30,
+    name: "UnStop",
+    description: "Competitive programming and coding contests",
+    link: "https://unstop.com/u/anchasin3031",
+    icon: "https://play-lh.googleusercontent.com/Sn4FCvXPL21HgxKO_-Oj0_ldYA8YH2muN6enGKpBylzvYpCa_cZTqbU6VEXYRtFGwg",
+    type: "Competitive-Programming",
+  },
+  {
+    id: 31,
+    name: "SPOJ",
+    description: "Sphere Online Judge coding challenges",
+    link: "https://www.spoj.com/myaccount/",
+    icon: "https://theindianwire.com/wp-content/uploads/2018/06/spoj-logo-1.jpeg",
+    type: "Problem-Solving",
+  }
+
 ];
