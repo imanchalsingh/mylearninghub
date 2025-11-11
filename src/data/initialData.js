@@ -247,6 +247,45 @@ export const profiles = [
     link: "https://www.spoj.com/myaccount/",
     icon: "https://theindianwire.com/wp-content/uploads/2018/06/spoj-logo-1.jpeg",
     type: "Problem-Solving",
+  },
+  {
+    id: 32,
+    name: "Slide Share",
+    description: "Share presentations and professional content",
+    link: "https://www.slideshare.net/singhanchal159357",
+    icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/slideshare-icon.png",
+    type: "Portfolio",
+  },
+  {
+    id: 33,
+    name: "CodeSignal",
+    description: "Coding challenges and interview practice",
+    link: "https://codesignal.com/learn/profile/cm2yrfmih000dnnhrcqz2gequ",
+    icon: "https://favicons.statusgator.com/codesignal.png",
+    type: "Problem-Solving",
+  },
+  {
+    id: 34,
+    name: "Edabit",
+    description: "Interactive coding challenges",
+    link: "https://edabit.com/user/phQDczpTiSzJDtwHm",
+    icon: "https://s3.amazonaws.com/edabit-images/monster001.png",
+    type: "Problem-Solving",
+  },
+  {
+    id: 35,
+    name: "TechGig",
+    description: "Coding challenges and tech competitions",
+    link: "https://www.techgig.com/pub/imanchalsingh",
+    icon: "https://images.sftcdn.net/images/t_app-icon-m/p/8a76562e-b945-4c95-9b8b-cb5ed085edd2/1182637427/techgig-coding-challenges-tech-news-skill-test-logo",
+    type: "Problem-Solving",
+  },
+  {
+    id: 36,
+    name:"Scribd",
+    description: "Document sharing and publishing platform",
+    link: "https://www.scribd.com/user/802772862/Anchal-Singh",
+    icon: "https://logowik.com/content/uploads/images/scribd6872.logowik.com.webp",
+    type: "Portfolio",
   }
-
 ];

@@ -59,7 +59,7 @@ const CodingProfiles = () => {
                   />
                 </div>
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300">
+                  <h3 className="text-xl font-semibold text-gray-800 dark:text-white group-hover:text-teal-600 dark:group-hover:text-teal-400 transition-colors duration-300 flex items-center gap-2">
                     {profile.name}
                   </h3>
                   <p>
