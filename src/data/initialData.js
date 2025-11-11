@@ -287,5 +287,21 @@ export const profiles = [
     link: "https://www.scribd.com/user/802772862/Anchal-Singh",
     icon: "https://logowik.com/content/uploads/images/scribd6872.logowik.com.webp",
     type: "Portfolio",
+  },
+  {
+    id: 37,
+    name: "JP Web Developers",
+    description: "Web development tutorials and resources",
+    link: "https://jpwebdevelopers.in/",
+    icon: "https://seeklogo.com/images/J/jp-logo-FD58173E89-seeklogo.com.png",
+    type: "Learning-Platform",
+  },
+  {
+    id: 38,
+    name:"TutorialsDuniya",
+    description: "Programming tutorials and guides",
+    link: "https://www.tutorialsduniya.com/",
+    icon: "https://www.tutorialsduniya.com/wp-content/uploads/2019/12/cropped-tutorialsduniya-new-logo-e1576378108199.png",
+    type: "Learning-Platform",
   }
 ];
