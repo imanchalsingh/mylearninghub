@@ -214,7 +214,7 @@ export const profiles = [
     description: "Coding and tech learning platform",
     link: "https://www.guvi.in/singhanchal15935796622",
     icon: "https://play-lh.googleusercontent.com/lAFgx9P9v6g9CGiJ4yXEghRTGikQg88xuxOg30t_licriW4ODAyXVK4NHBJj-HGILw",
-    type: "Learning-Platform",
+    type: "Problem-Solving",
   },
   {
     id: 28,
@@ -278,15 +278,15 @@ export const profiles = [
     description: "Coding challenges and tech competitions",
     link: "https://www.techgig.com/pub/imanchalsingh",
     icon: "https://images.sftcdn.net/images/t_app-icon-m/p/8a76562e-b945-4c95-9b8b-cb5ed085edd2/1182637427/techgig-coding-challenges-tech-news-skill-test-logo",
-    type: "Problem-Solving",
+    type: "Learning-Platform",
   },
   {
     id: 36,
-    name:"Scribd",
+    name: "Scribd",
     description: "Document sharing and publishing platform",
     link: "https://www.scribd.com/user/802772862/Anchal-Singh",
     icon: "https://logowik.com/content/uploads/images/scribd6872.logowik.com.webp",
-    type: "Portfolio",
+    type: "Learning-Platform",
   },
   {
     id: 37,
@@ -298,10 +298,19 @@ export const profiles = [
   },
   {
     id: 38,
-    name:"TutorialsDuniya",
+    name: "TutorialsDuniya",
     description: "Programming tutorials and guides",
     link: "https://www.tutorialsduniya.com/",
     icon: "https://www.tutorialsduniya.com/wp-content/uploads/2019/12/cropped-tutorialsduniya-new-logo-e1576378108199.png",
     type: "Learning-Platform",
-  }
+  },
+  {
+    id: 39,
+    name: "DevResources",
+    description:
+      "Curated list of development resources /Created by Anchal Singh",
+    link: "https://dev-docs-ai-one.vercel.app/",
+    icon: "https://www.pikpng.com/pngl/b/227-2277649_file-scripting-dev-icon-clipart.png",
+    type: "Learning-Platform",
+  },
 ];
