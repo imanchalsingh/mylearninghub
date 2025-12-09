@@ -1,6 +1,5 @@
 export const profiles = [
   {
-    id: 1,
     name: "GitHub",
     description: "Code repository and open source contributions",
     link: "https://github.com/imanchalsingh",
@@ -8,7 +7,6 @@ export const profiles = [
     type: "Code-Repository",
   },
   {
-    id: 2,
     name: "Codolio",
     description: "Portfolio and coding profile showcase",
     link: "https://codolio.com/profile/imanchalsingh",
@@ -16,7 +14,6 @@ export const profiles = [
     type: "Portfolio",
   },
   {
-    id: 3,
     name: "LeetCode",
     description: "Problem solving and algorithm challenges",
     link: "https://leetcode.com/imanchalsingh",
@@ -24,7 +21,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 4,
     name: "GeeksforGeeks",
     description: "Data structures and algorithm practice",
     link: "https://auth.geeksforgeeks.org/user/imanchalsingh",
@@ -32,7 +28,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 5,
     name: "Code360",
     description: "Coding Ninjas learning platform",
     link: "https://www.naukri.com/code360/profile/imanchalsingh",
@@ -40,7 +35,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 6,
     name: "InterviewBit",
     description: "Coding interview preparation platform",
     link: "https://www.interviewbit.com/profile/anchal-singh_974",
@@ -48,7 +42,6 @@ export const profiles = [
     type: "Interview-Prep",
   },
   {
-    id: 7,
     name: "CodeChef",
     description: "Competitive programming platform",
     link: "https://www.codechef.com/users/imanchalsingh",
@@ -56,16 +49,27 @@ export const profiles = [
     type: "Competitive-Programming",
   },
   {
-    id: 8,
     name: "Microsoft Learn",
     description: "Microsoft technologies and certifications",
     link: "https://learn.microsoft.com/en-us/users/imanchalsingh/",
     icon: "https://static.vecteezy.com/system/resources/previews/028/339/965/original/microsoft-icon-logo-symbol-free-png.png",
     type: "Learning-Platform",
   },
-
   {
-    id: 9,
+    name: "Hack2Skills Google",
+    description: "Google techologies and certifications",
+    link: "https://vision.hack2skill.com/event/genaiexchange?tab=academy&utm_source=hack2skill&utm_medium=homepage#certificate",
+    icon: "https://static.vecteezy.com/system/resources/previews/046/861/647/original/google-logo-transparent-background-free-png.png",
+    type: "Learning-Platform",
+  },
+  {
+    name: "Google Skill",
+    description: "",
+    link: "https://www.skills.google/",
+    icon: "https://static.vecteezy.com/system/resources/previews/046/861/647/original/google-logo-transparent-background-free-png.png",
+    type: "Learning-Platform",
+  },
+  {
     name: "SoloLearn",
     description: "Interactive coding courses and community",
     link: "https://www.sololearn.com/en/profile/32128928",
@@ -73,7 +77,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 10,
     name: "TakeUForward",
     description: "DSA course and coding challenges",
     link: "https://takeuforward.org/profile/imanchalsingh",
@@ -81,7 +84,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 11,
     name: "Project Euler",
     description: "Mathematical/ computational problems",
     link: "https://projecteuler.net/progress",
@@ -89,7 +91,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 12,
     name: "W3Schools",
     description: "Web development tutorials and references",
     link: "https://www.w3profile.com/imanchalsingh/",
@@ -97,7 +98,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 13,
     name: "Codeforces",
     description: "Competitive programming contests",
     link: "https://codeforces.com/profile/imanchalsingh",
@@ -105,7 +105,6 @@ export const profiles = [
     type: "Competitive-Programming",
   },
   {
-    id: 14,
     name: "Hackerearth",
     description: "Coding challenges and hackathons",
     link: "https://www.hackerearth.com/@imanchalsingh/",
@@ -113,7 +112,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 15,
     name: "Codewars",
     description: "Coding challenges and kata practice",
     link: "https://www.codewars.com/users/imanchalsingh",
@@ -121,7 +119,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 16,
     name: "Excercism",
     description: "Practice coding in various languages",
     link: "https://exercism.org/profiles/imanchalsingh",
@@ -129,7 +126,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 17,
     name: "FreeCodeCamp",
     description: "Learn to code for free",
     link: "https://www.freecodecamp.org/imanchalsingh",
@@ -137,7 +133,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 18,
     name: "JavaTpoint",
     description: "Programming tutorials and examples",
     link: "https://www.javatpoint.com/profile/imanchalsingh",
@@ -145,7 +140,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 19,
     name: "HackerRank",
     description: "Coding challenges and skill certifications",
     link: "https://www.hackerrank.com/imanchalsingh",
@@ -153,7 +147,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 20,
     name: "GitLab",
     description: "Code repository and CI/CD platform",
     link: "https://gitlab.com/imanchalsingh",
@@ -161,7 +154,6 @@ export const profiles = [
     type: "Code-Repository",
   },
   {
-    id: 21,
     name: "AtCoder",
     description: "Competitive programming contests",
     link: "https://atcoder.jp/users/imanchalsingh_",
@@ -169,7 +161,6 @@ export const profiles = [
     type: "Competitive-Programming",
   },
   {
-    id: 22,
     name: "Roadmap.sh",
     description: "Developer roadmaps and learning paths",
     link: "https://roadmap.sh/u/imanchalsingh",
@@ -177,7 +168,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 23,
     name: "Bitbucket",
     description: "Code repository and collaboration platform",
     link: "https://bitbucket.org/imanchalsingh/",
@@ -185,7 +175,6 @@ export const profiles = [
     type: "Code-Repository",
   },
   {
-    id: 24,
     name: "DevDocs.io",
     description: "API documentation browser",
     link: "https://devdocs.io/",
@@ -193,7 +182,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 25,
     name: "UiVerse",
     description: "UI/UX design and front-end development",
     link: "https://uiverse.io/elements",
@@ -201,7 +189,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 26,
     name: "TutorialsPoint",
     description: "Programming tutorials and courses",
     link: "https://www.tutorialspoint.com/practice/dashboard.php",
@@ -209,7 +196,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 27,
     name: "GUVI",
     description: "Coding and tech learning platform",
     link: "https://www.guvi.in/singhanchal15935796622",
@@ -217,7 +203,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 28,
     name: "Frontend Practice",
     description: "Frontend coding challenges and projects",
     link: "https://www.frontendpractice.com/retired/grasshopper",
@@ -225,7 +210,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 29,
     name: "Design Systems Repo",
     description: "Collection of design systems and resources",
     link: "https://designsystemsrepo.com/",
@@ -233,7 +217,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 30,
     name: "UnStop",
     description: "Competitive programming and coding contests",
     link: "https://unstop.com/u/anchasin3031",
@@ -241,7 +224,6 @@ export const profiles = [
     type: "Competitive-Programming",
   },
   {
-    id: 31,
     name: "SPOJ",
     description: "Sphere Online Judge coding challenges",
     link: "https://www.spoj.com/myaccount/",
@@ -249,7 +231,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 32,
     name: "Slide Share",
     description: "Share presentations and professional content",
     link: "https://www.slideshare.net/singhanchal159357",
@@ -257,7 +238,6 @@ export const profiles = [
     type: "Portfolio",
   },
   {
-    id: 33,
     name: "CodeSignal",
     description: "Coding challenges and interview practice",
     link: "https://codesignal.com/learn/profile/cm2yrfmih000dnnhrcqz2gequ",
@@ -265,7 +245,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 34,
     name: "Edabit",
     description: "Interactive coding challenges",
     link: "https://edabit.com/user/phQDczpTiSzJDtwHm",
@@ -273,7 +252,6 @@ export const profiles = [
     type: "Problem-Solving",
   },
   {
-    id: 35,
     name: "TechGig",
     description: "Coding challenges and tech competitions",
     link: "https://www.techgig.com/pub/imanchalsingh",
@@ -281,7 +259,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 36,
     name: "Scribd",
     description: "Document sharing and publishing platform",
     link: "https://www.scribd.com/user/802772862/Anchal-Singh",
@@ -289,7 +266,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 37,
     name: "JP Web Developers",
     description: "Web development tutorials and resources",
     link: "https://jpwebdevelopers.in/",
@@ -297,7 +273,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 38,
     name: "TutorialsDuniya",
     description: "Programming tutorials and guides",
     link: "https://www.tutorialsduniya.com/",
@@ -305,7 +280,6 @@ export const profiles = [
     type: "Learning-Platform",
   },
   {
-    id: 39,
     name: "DevResources",
     description:
       "Curated list of development resources /Created by Anchal Singh",

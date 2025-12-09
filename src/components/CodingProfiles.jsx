@@ -47,7 +47,7 @@ const CodingProfiles = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProfiles.map((profile) => (
             <div
-              key={profile.id}
+              key={profile.name}
               className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100 dark:border-gray-700 hover:border-teal-200 dark:hover:border-teal-800 group"
             >
               <div className="flex items-center mb-5">
