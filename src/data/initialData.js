@@ -135,7 +135,7 @@ export const profiles = [
   {
     name: "JavaTpoint",
     description: "Programming tutorials and examples",
-    link: "https://www.javatpoint.com/profile/imanchalsingh",
+    link: "https://www.tpointtech.com/",
     icon: "https://codershot.com/wp-content/uploads/2023/01/JavaTpoint.png",
     type: "Learning-Platform",
   },
