@@ -57,14 +57,14 @@ export const profiles = [
   },
   {
     name: "Hack2Skills Google",
-    description: "Google techologies and certifications",
+    description: "Hack@Skills' certifications",
     link: "https://vision.hack2skill.com/event/genaiexchange?tab=academy&utm_source=hack2skill&utm_medium=homepage#certificate",
     icon: "https://static.vecteezy.com/system/resources/previews/046/861/647/original/google-logo-transparent-background-free-png.png",
     type: "Learning-Platform",
   },
   {
     name: "Google Skill",
-    description: "",
+    description: "Google techologies and certifications",
     link: "https://www.skills.google/",
     icon: "https://static.vecteezy.com/system/resources/previews/046/861/647/original/google-logo-transparent-background-free-png.png",
     type: "Learning-Platform",
