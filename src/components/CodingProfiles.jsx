@@ -228,7 +228,7 @@ const CodingProfiles = () => {
                 <div className="mb-6">
                   <div className="flex items-start justify-between mb-4">
                     <div>
-                      <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-linear group-hover:bg-linear-to-r group-hover:from-red-600 group-hover:to-rose-600 transition-all duration-300 font-['Kanit']">
+                      <h3 className="px-2 py-1 rounded-full text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-linear group-hover:bg-linear-to-r group-hover:from-red-600 group-hover:to-rose-600 transition-all duration-300 font-['Kanit']">
                         {profile.name}
                       </h3>
                       {profile.username && (
@@ -272,7 +272,7 @@ const CodingProfiles = () => {
                     <div className="w-8 h-8 rounded-lg bg-linear-to-br from-red-100 to-rose-100 dark:from-red-900/30 dark:to-rose-900/30 flex items-center justify-center group-hover/btn:from-red-200 group-hover/btn:to-rose-200 dark:group-hover/btn:from-red-800/50 dark:group-hover/btn:to-rose-800/50 transition-all duration-300">
                       <ArrowTopRightOnSquareIcon className="w-4 h-4 text-red-600 dark:text-red-400 group-hover/btn:scale-110 transition-transform duration-300" />
                     </div>
-                    <span className="font-bold text-gray-800 dark:text-gray-200 text-sm tracking-wider font-['Kanit'] group-hover/btn:text-linear group-hover/btn:bg-linear-to-r group-hover/btn:from-red-600 group-hover/btn:to-rose-600 transition-all duration-300">
+                    <span className="px-2 py-1 rounded-full font-bold text-gray-800 dark:text-gray-200 text-sm tracking-wider font-['Kanit'] group-hover/btn:text-linear group-hover/btn:bg-linear-to-r group-hover/btn:from-red-600 group-hover/btn:to-rose-600 transition-all duration-300">
                       Explore Profile
                     </span>
                   </div>
