@@ -137,7 +137,7 @@ export const profiles = [
     description: "Programming tutorials and examples",
     link: "https://www.tpointtech.com/",
     icon: "https://codershot.com/wp-content/uploads/2023/01/JavaTpoint.png",
-    type: "Learning-Platform",
+    type: "Documentations",
   },
   {
     name: "HackerRank",
@@ -165,7 +165,7 @@ export const profiles = [
     description: "Developer roadmaps and learning paths",
     link: "https://roadmap.sh/u/imanchalsingh",
     icon: "https://cdn-1.webcatalog.io/catalog/roadmap-sh/roadmap-sh-icon-filled-256.png?v=1687417626361",
-    type: "Learning-Platform",
+    type: "Documentations",
   },
   {
     name: "Bitbucket",
@@ -179,7 +179,7 @@ export const profiles = [
     description: "API documentation browser",
     link: "https://devdocs.io/",
     icon: "https://devdocs.io/images/icon-320.png",
-    type: "Learning-Platform",
+    type: "Documentations",
   },
   {
     name: "UiVerse",
@@ -193,7 +193,7 @@ export const profiles = [
     description: "Programming tutorials and courses",
     link: "https://www.tutorialspoint.com/practice/dashboard.php",
     icon: "https://cdn-1.webcatalog.io/catalog/tutorials-point/tutorials-point-icon.png",
-    type: "Learning-Platform",
+    type: "Documentations",
   },
   {
     name: "GUVI",
@@ -235,7 +235,7 @@ export const profiles = [
     description: "Share presentations and professional content",
     link: "https://www.slideshare.net/singhanchal159357",
     icon: "https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/slideshare-icon.png",
-    type: "Portfolio",
+    type: "Documentations",
   },
   {
     name: "CodeSignal",
@@ -263,21 +263,21 @@ export const profiles = [
     description: "Document sharing and publishing platform",
     link: "https://www.scribd.com/user/802772862/Anchal-Singh",
     icon: "https://logowik.com/content/uploads/images/scribd6872.logowik.com.webp",
-    type: "Learning-Platform",
+    type: "Documentations",
   },
   {
     name: "JP Web Developers",
     description: "Web development tutorials and resources",
     link: "https://jpwebdevelopers.in/",
     icon: "https://seeklogo.com/images/J/jp-logo-FD58173E89-seeklogo.com.png",
-    type: "Learning-Platform",
+    type: "Documentations",
   },
   {
     name: "TutorialsDuniya",
     description: "Programming tutorials and guides",
     link: "https://www.tutorialsduniya.com/",
     icon: "https://www.tutorialsduniya.com/wp-content/uploads/2019/12/cropped-tutorialsduniya-new-logo-e1576378108199.png",
-    type: "Learning-Platform",
+    type: "Documentations",
   },
   {
     name: "DevResources",
@@ -285,6 +285,6 @@ export const profiles = [
       "Curated list of development resources /Created by Anchal Singh",
     link: "https://dev-docs-ai-one.vercel.app/",
     icon: "https://www.pikpng.com/pngl/b/227-2277649_file-scripting-dev-icon-clipart.png",
-    type: "Learning-Platform",
+    type: "Documentations",
   },
 ];
