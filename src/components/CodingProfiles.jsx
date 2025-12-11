@@ -6,14 +6,15 @@ import {
   CodeBracketIcon,
   SparklesIcon,
   TrophyIcon,
-  BoltIcon
+  BoltIcon,
+  StarIcon,
+  ChevronRightIcon
 } from "@heroicons/react/24/outline";
 import { profiles } from "../data/initialData";
 
 const CodingProfiles = () => {
   const [filterType, setFilterType] = useState("all");
   const [hoveredCard, setHoveredCard] = useState(null);
-  const [activePlatform, setActivePlatform] = useState("all");
 
   const uniqueTypes = ["all", ...new Set(profiles.map((p) => p.type))];
   const filteredProfiles = profiles.filter((profile) => {
@@ -157,42 +158,26 @@ const CodingProfiles = () => {
                 Filter through different coding platforms to explore specific skills and achievements
               </p>
             </div>
-            
-            <div className="relative group">
-              <div className="absolute -inset-1 bg-linear-to-r from-red-600 to-rose-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-500"></div>
-              <select
-                value={filterType}
-                onChange={(e) => {
-                  setFilterType(e.target.value);
-                  setActivePlatform(e.target.value);
-                }}
-                className="relative bg-white/90 dark:bg-gray-900/90 backdrop-blur-sm text-gray-900 dark:text-gray-100 py-4 pl-8 pr-14 rounded-2xl border-2 border-gray-200 dark:border-gray-800 focus:outline-none focus:border-red-500 focus:ring-4 focus:ring-red-500/20 shadow-2xl cursor-pointer w-72 font-medium transition-all duration-300 hover:scale-[1.02]"
-              >
-                {uniqueTypes.map((type) => (
-                  <option key={type} value={type} className="py-3 text-lg">
-                    {type === "all" ? "🌌 All Platforms" : `🚀 ${type.charAt(0).toUpperCase() + type.slice(1).replace("-", " ")}`}
-                  </option>
-                ))}
-              </select>
-              <div className="absolute right-6 top-1/2 transform -translate-y-1/2">
-                <svg className="w-6 h-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                </svg>
-              </div>
-            </div>
           </div>
 
-          {/* Platform Type Chips */}
+          {/* Platform Type Chips - Only keeping this filter */}
           <div className="flex flex-wrap gap-4 justify-center mb-8">
+            <button
+              onClick={() => setFilterType("all")}
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 font-['Kanit'] ${
+                filterType === "all"
+                  ? "bg-linear-to-r from-red-600 to-rose-600 text-white shadow-2xl shadow-red-500/30"
+                  : "bg-white/50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-700/50 border-2 border-gray-100 dark:border-gray-700"
+              }`}
+            >
+              🌌 ALL PLATFORMS
+            </button>
             {uniqueTypes.filter(type => type !== "all").map((type) => (
               <button
                 key={type}
-                onClick={() => {
-                  setFilterType(type);
-                  setActivePlatform(type);
-                }}
+                onClick={() => setFilterType(type)}
                 className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 font-['Kanit'] ${
-                  activePlatform === type
+                  filterType === type
                     ? "bg-linear-to-r from-red-600 to-rose-600 text-white shadow-2xl shadow-red-500/30"
                     : "bg-white/50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-700/50 border-2 border-gray-100 dark:border-gray-700"
                 }`}
@@ -260,22 +245,67 @@ const CodingProfiles = () => {
                   </p>
                 </div>
 
-                {/* Action Button */}
+                {/* Stats Bar (if available) */}
+                {profile.stats && (
+                  <div className="mb-6 grid grid-cols-3 gap-4">
+                    {profile.stats.map((stat, idx) => (
+                      <div key={idx} className="text-center">
+                        <div className="text-2xl font-bold text-gray-900 dark:text-white font-['Kanit']">{stat.value}</div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400 uppercase tracking-wider mt-1">{stat.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                {/* Updated Action Button */}
                 <a
                   href={profile.link}
-                  className="group/btn relative inline-flex items-center justify-center w-full py-4 px-6 rounded-xl overflow-hidden transition-all duration-500"
+                  className="group/btn relative inline-flex items-center justify-between w-full py-4 px-6 rounded-xl overflow-hidden transition-all duration-500 bg-white/50 dark:bg-gray-800/50 border-2 border-gray-200/50 dark:border-gray-700/50 hover:border-red-300 dark:hover:border-red-700/50 hover:shadow-lg hover:shadow-red-500/10"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="absolute inset-0 bg-linear-to-r from-red-600 to-rose-600 transform -translate-x-full group-hover/btn:translate-x-0 transition-transform duration-500"></div>
-                  <div className="absolute inset-0 bg-linear-to-r from-red-500 to-rose-500 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative flex items-center justify-between w-full">
-                    <span className="font-bold text-white text-sm tracking-wider uppercase font-['Kanit']">
-                      Explore Journey
+                  {/* Gradient background on hover */}
+                  <div className="absolute inset-0 bg-linear-to-r from-red-600/0 via-rose-600/0 to-pink-600/0 group-hover/btn:from-red-600/10 group-hover/btn:via-rose-600/10 group-hover/btn:to-pink-600/10 transition-all duration-500"></div>
+                  
+                  {/* Left side - Text */}
+                  <div className="relative flex items-center gap-3">
+                    <div className="w-8 h-8 rounded-lg bg-linear-to-br from-red-100 to-rose-100 dark:from-red-900/30 dark:to-rose-900/30 flex items-center justify-center group-hover/btn:from-red-200 group-hover/btn:to-rose-200 dark:group-hover/btn:from-red-800/50 dark:group-hover/btn:to-rose-800/50 transition-all duration-300">
+                      <ArrowTopRightOnSquareIcon className="w-4 h-4 text-red-600 dark:text-red-400 group-hover/btn:scale-110 transition-transform duration-300" />
+                    </div>
+                    <span className="font-bold text-gray-800 dark:text-gray-200 text-sm tracking-wider font-['Kanit'] group-hover/btn:text-linear group-hover/btn:bg-linear-to-r group-hover/btn:from-red-600 group-hover/btn:to-rose-600 transition-all duration-300">
+                      Explore Profile
                     </span>
-                    <ArrowTopRightOnSquareIcon className="w-5 h-5 text-white transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform duration-300" />
                   </div>
+                  
+                  {/* Right side - Arrow */}
+                  <div className="relative">
+                    <div className="w-8 h-8 rounded-full bg-linear-to-r from-red-600/0 to-rose-600/0 group-hover/btn:from-red-600 group-hover/btn:to-rose-600 flex items-center justify-center transition-all duration-500">
+                      <ChevronRightIcon className="w-4 h-4 text-gray-600 dark:text-gray-400 group-hover/btn:text-white group-hover/btn:translate-x-1 transition-all duration-300" />
+                    </div>
+                  </div>
+                  
+                  {/* Pulse effect on hover */}
+                  <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover/btn:border-red-300/30 dark:group-hover/btn:border-red-700/30 transition-all duration-500"></div>
                 </a>
+
+                {/* Rating (if available) */}
+                {profile.rating && (
+                  <div className="mt-4 flex items-center justify-center gap-2">
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <StarIcon
+                          key={i}
+                          className={`w-4 h-4 ${
+                            i < profile.rating
+                              ? "text-yellow-500 fill-yellow-500"
+                              : "text-gray-300 dark:text-gray-600"
+                          }`}
+                        />
+                      ))}
+                    </div>
+                    <span className="text-sm text-gray-600 dark:text-gray-400">{profile.rating}/5</span>
+                  </div>
+                )}
 
                 {/* Hover Effect Lines */}
                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-linear-to-r from-transparent via-red-500/0 to-transparent group-hover:via-red-500/50 transition-all duration-500"></div>
