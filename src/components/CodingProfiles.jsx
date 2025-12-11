@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { 
-  ArrowTopRightOnSquareIcon, 
-  FireIcon, 
-  ChartBarIcon, 
+import {
+  ArrowTopRightOnSquareIcon,
+  FireIcon,
+  ChartBarIcon,
   CodeBracketIcon,
   SparklesIcon,
   TrophyIcon,
@@ -26,13 +26,13 @@ const CodingProfiles = () => {
 
   return (
     <section id="coding-profiles" className="relative py-24 bg-linear-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 overflow-hidden font-['Josefin_Sans']">
-      
+
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-linear-to-br from-red-500 to-pink-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse"></div>
         <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-linear-to-tr from-rose-500 to-purple-600 rounded-full mix-blend-multiply filter blur-3xl opacity-10 animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-64 bg-linear-to-r from-transparent via-red-500/5 to-transparent"></div>
-        
+
         {/* Grid Pattern */}
         <div className="absolute inset-0 bg-[linear-linear(to_right,#f0f0f0_1px,transparent_1px),linear-linear(to_bottom,#f0f0f0_1px,transparent_1px)] dark:bg-[linear-linear(to_right,#1f2937_1px,transparent_1px),linear-linear(to_bottom,#1f2937_1px,transparent_1px)] bg-size:4rem_4rem mask-[radial-linear(ellipse_at_center,black_20%,transparent_70%)]"></div>
       </div>
@@ -50,7 +50,7 @@ const CodingProfiles = () => {
               Digital Footprint
             </span>
           </div>
-          
+
           <h1 className="text-5xl md:text-7xl font-bold mb-8 font-['Kanit']">
             <span className="text-gray-900 dark:text-white">My</span>
             <span className="text-transparent bg-clip-text bg-linear-to-r from-red-500 via-rose-500 to-pink-600 mx-4">
@@ -58,9 +58,9 @@ const CodingProfiles = () => {
             </span>
             <span className="text-gray-900 dark:text-white">Universe</span>
           </h1>
-          
+
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mb-14 leading-relaxed font-light">
-            Navigating through different platforms where code meets creativity. 
+            Navigating through different platforms where code meets creativity.
             Each profile is a unique chapter in my ongoing journey of learning, building, and innovating.
           </p>
 
@@ -164,25 +164,23 @@ const CodingProfiles = () => {
           <div className="flex flex-wrap gap-4 justify-center mb-8">
             <button
               onClick={() => setFilterType("all")}
-              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 font-['Kanit'] ${
-                filterType === "all"
-                  ? "bg-linear-to-r from-red-600 to-rose-600 text-white shadow-2xl shadow-red-500/30"
-                  : "bg-white/50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-700/50 border-2 border-gray-100 dark:border-gray-700"
-              }`}
+              className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 font-['Kanit'] ${filterType === "all"
+                ? "bg-linear-to-r from-red-600 to-rose-600 text-white shadow-2xl shadow-red-500/30"
+                : "bg-white/50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-700/50 border-2 border-gray-100 dark:border-gray-700"
+                }`}
             >
-              🌌 ALL PLATFORMS
+              ALL PLATFORMS
             </button>
             {uniqueTypes.filter(type => type !== "all").map((type) => (
               <button
                 key={type}
                 onClick={() => setFilterType(type)}
-                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 font-['Kanit'] ${
-                  filterType === type
-                    ? "bg-linear-to-r from-red-600 to-rose-600 text-white shadow-2xl shadow-red-500/30"
-                    : "bg-white/50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-700/50 border-2 border-gray-100 dark:border-gray-700"
-                }`}
+                className={`px-6 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 active:scale-95 font-['Kanit'] ${filterType === type
+                  ? "bg-linear-to-r from-red-600 to-rose-600 text-white shadow-2xl shadow-red-500/30"
+                  : "bg-white/50 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 hover:bg-white/80 dark:hover:bg-gray-700/50 border-2 border-gray-100 dark:border-gray-700"
+                  }`}
               >
-                {type.replace("-", " ").toUpperCase()}
+                {type.replace("-", " ")}
               </button>
             ))}
           </div>
@@ -198,12 +196,11 @@ const CodingProfiles = () => {
               className="group relative"
             >
               {/* Animated Border */}
-              <div className={`absolute -inset-0.5 bg-linear-to-r from-red-500 via-rose-500 to-pink-600 rounded-3xl blur opacity-0 group-hover:opacity-30 transition duration-500 ${
-                hoveredCard === index ? 'opacity-40' : ''
-              }`}></div>
-              
+              <div className={`absolute -inset-0.5 bg-linear-to-r from-red-500 via-rose-500 to-pink-600 rounded-3xl blur opacity-0 group-hover:opacity-30 transition duration-500 ${hoveredCard === index ? 'opacity-40' : ''
+                }`}></div>
+
               <div className="relative bg-linear-to-br from-white/90 via-white/80 to-white/60 dark:from-gray-900/90 dark:via-gray-900/80 dark:to-gray-900/60 backdrop-blur-xl rounded-3xl p-8 border border-white/20 dark:border-gray-700/30 shadow-2xl hover:shadow-red-500/10 transition-all duration-500 transform hover:-translate-y-2">
-                
+
                 {/* Platform Badge */}
                 <div className="absolute -top-3 right-6">
                   <span className="px-4 py-2 bg-linear-to-r from-red-600 to-rose-600 text-white text-xs font-bold rounded-full shadow-lg shadow-red-500/30 uppercase tracking-wider font-['Kanit']">
@@ -211,35 +208,32 @@ const CodingProfiles = () => {
                   </span>
                 </div>
 
-                {/* Icon Container with Glow */}
-                <div className="relative mb-8">
-                  <div className="absolute inset-0 bg-linear-to-r from-red-500 to-rose-600 rounded-2xl blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
-                  <div className="relative w-20 h-20 rounded-2xl bg-linear-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center border-2 border-white/50 dark:border-gray-700/50 group-hover:border-red-200 dark:group-hover:border-red-800/50 transition-all duration-500">
-                    <div className="absolute inset-2 bg-linear-to-br from-red-100/20 to-rose-100/20 dark:from-red-900/10 dark:to-rose-900/10 rounded-xl"></div>
-                    <img
-                      src={profile.icon}
-                      alt={profile.name}
-                      className="relative w-12 h-12 object-contain filter group-hover:brightness-110 transition-all duration-500"
-                    />
-                  </div>
-                </div>
 
-                {/* Content */}
-                <div className="mb-6">
-                  <div className="flex items-start justify-between mb-4">
+
+                <div className="relative mb-8">
+                  <div className="flex items-center gap-6">
+                    {/* Icon Container */}
+                    <div className="relative shrink-0">
+                      <div className="absolute inset-0 bg-linear-to-r from-red-500 to-rose-600 rounded-full blur opacity-20 group-hover:opacity-30 transition-opacity duration-500"></div>
+                      <div className="relative w-20 h-20 rounded-3xl bg-linear-to-br from-white to-gray-50 dark:from-gray-800 dark:to-gray-900 flex items-center justify-center border-2 border-white/50 dark:border-gray-700/50 group-hover:border-red-200 dark:group-hover:border-red-800/50 transition-all duration-500">
+                        <img
+                          src={profile.icon}
+                          alt={profile.name}
+                          className="relative w-12 h-12 object-contain filter group-hover:brightness-110 transition-all duration-500"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Name and Username Container */}
                     <div>
-                      <h3 className="px-2 py-1 rounded-full text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-linear group-hover:bg-linear-to-r group-hover:from-red-600 group-hover:to-rose-600 transition-all duration-300 font-['Kanit']">
+                      <h3 className=" px-3 py-1 rounded-full text-2xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-linear group-hover:bg-linear-to-r group-hover:from-red-600 group-hover:to-rose-600 transition-all duration-300 font-['Kanit'] truncate">
                         {profile.name}
                       </h3>
-                      {profile.username && (
-                        <p className="text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2">
-                          <span className="w-2 h-2 bg-linear-to-r from-red-500 to-rose-600 rounded-full"></span>
-                          @{profile.username}
-                        </p>
-                      )}
                     </div>
                   </div>
-
+                </div>
+                {/* Content */}
+                <div className="mb-6">
                   <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed line-clamp-3 font-light">
                     {profile.description}
                   </p>
@@ -266,7 +260,7 @@ const CodingProfiles = () => {
                 >
                   {/* Gradient background on hover */}
                   <div className="absolute inset-0 bg-linear-to-r from-red-600/0 via-rose-600/0 to-pink-600/0 group-hover/btn:from-red-600/10 group-hover/btn:via-rose-600/10 group-hover/btn:to-pink-600/10 transition-all duration-500"></div>
-                  
+
                   {/* Left side - Text */}
                   <div className="relative flex items-center gap-3">
                     <div className="w-8 h-8 rounded-lg bg-linear-to-br from-red-100 to-rose-100 dark:from-red-900/30 dark:to-rose-900/30 flex items-center justify-center group-hover/btn:from-red-200 group-hover/btn:to-rose-200 dark:group-hover/btn:from-red-800/50 dark:group-hover/btn:to-rose-800/50 transition-all duration-300">
@@ -276,14 +270,14 @@ const CodingProfiles = () => {
                       Explore Profile
                     </span>
                   </div>
-                  
+
                   {/* Right side - Arrow */}
                   <div className="relative">
                     <div className="w-8 h-8 rounded-full bg-linear-to-r from-red-600/0 to-rose-600/0 group-hover/btn:from-red-600 group-hover/btn:to-rose-600 flex items-center justify-center transition-all duration-500">
                       <ChevronRightIcon className="w-4 h-4 text-gray-600 dark:text-gray-400 group-hover/btn:text-white group-hover/btn:translate-x-1 transition-all duration-300" />
                     </div>
                   </div>
-                  
+
                   {/* Pulse effect on hover */}
                   <div className="absolute inset-0 rounded-xl border-2 border-transparent group-hover/btn:border-red-300/30 dark:group-hover/btn:border-red-700/30 transition-all duration-500"></div>
                 </a>
@@ -295,11 +289,10 @@ const CodingProfiles = () => {
                       {[...Array(5)].map((_, i) => (
                         <StarIcon
                           key={i}
-                          className={`w-4 h-4 ${
-                            i < profile.rating
-                              ? "text-yellow-500 fill-yellow-500"
-                              : "text-gray-300 dark:text-gray-600"
-                          }`}
+                          className={`w-4 h-4 ${i < profile.rating
+                            ? "text-yellow-500 fill-yellow-500"
+                            : "text-gray-300 dark:text-gray-600"
+                            }`}
                         />
                       ))}
                     </div>
