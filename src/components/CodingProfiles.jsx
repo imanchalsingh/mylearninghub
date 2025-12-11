@@ -208,8 +208,6 @@ const CodingProfiles = () => {
                   </span>
                 </div>
 
-
-
                 <div className="relative mb-8">
                   <div className="flex items-center gap-6">
                     {/* Icon Container */}
