@@ -133,6 +133,30 @@ export const profiles = [
     type: "Problem Solving",
   },
   {
+    name: "Linktree",
+    description:
+      "All my important links in one place – portfolio, socials, and profiles.",
+    link: "https://linktr.ee/imanchalsingh",
+    icon: "https://cdn.freelogovectors.net/wp-content/uploads/2022/01/linktree-logo-freelogovectors.net_.png",
+    type: "Social",
+  },
+  {
+    name: "Peerlist",
+    description:
+      "My professional developer profile showcasing skills, projects, and achievements.",
+    link: "https://peerlist.io/imanchalsingh",
+    icon: "https://logowik.com/content/uploads/images/peerlist11139.logowik.com.webp",
+    type: "Portfolio",
+  },
+  {
+    name: "Fueler",
+    description:
+      "My work portfolio featuring real-world projects, tasks, and contributions.",
+    link: "https://fueler.io/imanchalsingh",
+    icon: "https://career.fueler.io/static/media/logo.26676f2ff0dc3739c316.png",
+    type: "Portfolio",
+  },
+  {
     name: "Exercism",
     description: "Practice coding in various languages",
     link: "https://exercism.org/profiles/imanchalsingh",
