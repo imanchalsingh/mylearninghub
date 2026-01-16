@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import {
   ArrowTopRightOnSquareIcon,
-  FireIcon,
-  ChartBarIcon,
-  CodeBracketIcon,
   SparklesIcon,
-  TrophyIcon,
-  BoltIcon,
   StarIcon,
   ChevronRightIcon
 } from "@heroicons/react/24/outline";
@@ -21,8 +16,6 @@ const CodingProfiles = () => {
     return filterType === "all" || profile.type === filterType;
   });
 
-  const totalProfiles = profiles.length;
-  const platformTypes = uniqueTypes.length - 1;
 
   return (
     <section id="coding-profiles" className="relative py-24 bg-linear-to-br from-gray-50 via-white to-gray-100 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900 overflow-hidden font-['Josefin_Sans']">
@@ -64,84 +57,6 @@ const CodingProfiles = () => {
             Each profile is a unique chapter in my ongoing journey of learning, building, and innovating.
           </p>
 
-          {/* Enhanced Stats Bar */}
-          <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
-            <div className="relative group">
-              <div className="absolute inset-0 bg-linear-to-r from-red-500 to-rose-600 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
-              <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl p-8 border border-white/20 dark:border-gray-700/50 shadow-2xl hover:shadow-red-500/20 transition-all duration-500">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2 font-['Kanit']">{totalProfiles}</div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">Total Profiles</div>
-                  </div>
-                  <div className="p-4 bg-linear-to-br from-red-100 to-rose-100 dark:from-red-900/30 dark:to-rose-900/30 rounded-xl">
-                    <FireIcon className="h-8 w-8 text-linear bg-linear-to-r from-red-500 to-rose-600" />
-                  </div>
-                </div>
-                <div className="mt-4 text-xs text-red-500 dark:text-red-400 flex items-center gap-2">
-                  <BoltIcon className="w-4 h-4" />
-                  Actively Growing
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group">
-              <div className="absolute inset-0 bg-linear-to-r from-rose-500 to-pink-600 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
-              <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl p-8 border border-white/20 dark:border-gray-700/50 shadow-2xl hover:shadow-rose-500/20 transition-all duration-500">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2 font-['Kanit']">{platformTypes}</div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">Platform Types</div>
-                  </div>
-                  <div className="p-4 bg-linear-to-br from-rose-100 to-pink-100 dark:from-rose-900/30 dark:to-pink-900/30 rounded-xl">
-                    <ChartBarIcon className="h-8 w-8 text-linear bg-linear-to-r from-rose-500 to-pink-600" />
-                  </div>
-                </div>
-                <div className="mt-4 text-xs text-rose-500 dark:text-rose-400 flex items-center gap-2">
-                  <TrophyIcon className="w-4 h-4" />
-                  Diverse Expertise
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group">
-              <div className="absolute inset-0 bg-linear-to-r from-pink-500 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
-              <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl p-8 border border-white/20 dark:border-gray-700/50 shadow-2xl hover:shadow-pink-500/20 transition-all duration-500">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2 font-['Kanit']">24/7</div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">Active Learning</div>
-                  </div>
-                  <div className="p-4 bg-linear-to-br from-pink-100 to-purple-100 dark:from-pink-900/30 dark:to-purple-900/30 rounded-xl">
-                    <CodeBracketIcon className="h-8 w-8 text-linear bg-linear-to-r from-pink-500 to-purple-600" />
-                  </div>
-                </div>
-                <div className="mt-4 text-xs text-pink-500 dark:text-pink-400 flex items-center gap-2">
-                  <SparklesIcon className="w-4 h-4" />
-                  Continuous Growth
-                </div>
-              </div>
-            </div>
-
-            <div className="relative group">
-              <div className="absolute inset-0 bg-linear-to-r from-purple-500 to-indigo-600 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-all duration-500"></div>
-              <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-2xl p-8 border border-white/20 dark:border-gray-700/50 shadow-2xl hover:shadow-purple-500/20 transition-all duration-500">
-                <div className="flex items-center justify-between">
-                  <div>
-                    <div className="text-4xl font-bold text-gray-900 dark:text-white mb-2 font-['Kanit']">∞</div>
-                    <div className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">Projects Built</div>
-                  </div>
-                  <div className="p-4 bg-linear-to-br from-purple-100 to-indigo-100 dark:from-purple-900/30 dark:to-indigo-900/30 rounded-xl">
-                    <SparklesIcon className="h-8 w-8 text-linear bg-linear-to-r from-purple-500 to-indigo-600" />
-                  </div>
-                </div>
-                <div className="mt-4 text-xs text-purple-500 dark:text-purple-400 flex items-center gap-2">
-                  <BoltIcon className="w-4 h-4" />
-                  Infinite Potential
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         {/* Platform Filter Tabs */}
