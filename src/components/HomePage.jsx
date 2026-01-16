@@ -120,7 +120,7 @@ const HomePage = () => {
             </nav>
 
             {/* Hero Section */}
-            <section id="home" className="relative z-10 pt-16 md:pt-32 pb-20 px-4 md:px-8">
+            <section id="home" className="relative z-10 pt-10 md:pt-17 pb-20 px-4 md:px-8">
                 <div className="container mx-auto max-w-7xl">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         {/* Left Column - Content */}
@@ -193,13 +193,6 @@ const HomePage = () => {
                                         {totalProfiles}+
                                     </div>
                                     <div className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">Profiles</div>
-                                </div>
-                                <div className="w-1 h-8 bg-linear-to-b from-red-500/50 to-rose-500/50 rounded-full"></div>
-                                <div className="text-center">
-                                    <div className="text-3xl font-bold text-linear bg-linear-to-r from-rose-600 to-pink-600 bg-clip-text text-transparent font-['Kanit']">
-                                        {platformTypes}
-                                    </div>
-                                    <div className="text-sm text-gray-500 dark:text-gray-400 uppercase tracking-wider">Platforms</div>
                                 </div>
                                 <div className="w-1 h-8 bg-linear-to-b from-rose-500/50 to-pink-500/50 rounded-full"></div>
                                 <div className="text-center">
@@ -276,65 +269,6 @@ const HomePage = () => {
                 </div>
             </section>
 
-            {/* Enhanced Stats Section */}
-            <div className="relative z-10 py-16 px-4 md:px-8">
-                <div className="container mx-auto max-w-7xl">
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        {[
-                            {
-                                number: "100+",
-                                label: "Projects",
-                                suffix: "Completed",
-                                icon: CloudArrowUpIcon,
-                                color: "from-red-600 to-rose-600"
-                            },
-                            {
-                                number: "2000+",
-                                label: "Code",
-                                suffix: "Commits",
-                                icon: CommandLineIcon,
-                                color: "from-rose-600 to-pink-600"
-                            },
-                            {
-                                number: "50+",
-                                label: "Technologies",
-                                suffix: "Mastered",
-                                icon: CpuChipIcon,
-                                color: "from-pink-600 to-purple-600"
-                            },
-                            {
-                                number: "∞",
-                                label: "Passion",
-                                suffix: "For Innovation",
-                                icon: SparklesIcon,
-                                color: "from-purple-600 to-indigo-600"
-                            }
-                        ].map((stat, index) => (
-                            <div
-                                key={index}
-                                className="relative group"
-                            >
-                                <div className={`absolute -inset-0.5 bg-linear-to-r ${stat.color} rounded-3xl blur opacity-30 group-hover:opacity-50 transition duration-500`}></div>
-                                <div className="relative bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl rounded-3xl p-8 border border-white/20 dark:border-gray-800/50 transition-all duration-500 hover:scale-105">
-                                    <div className="flex items-center justify-between mb-6">
-                                        <stat.icon className={`h-10 w-10 text-linear bg-linear-to-r ${stat.color}`} />
-                                        <div className="w-3 h-3 bg-linear-to-r from-red-500 to-rose-600 rounded-full animate-pulse"></div>
-                                    </div>
-                                    <div className="text-4xl md:text-5xl font-bold mb-2 font-['Kanit']">
-                                        <span className={`text-linear bg-linear-to-r ${stat.color} bg-clip-text text-transparent`}>
-                                            {stat.number}
-                                        </span>
-                                    </div>
-                                    <div className="text-gray-600 dark:text-gray-400">
-                                        <span className="font-semibold text-gray-800 dark:text-gray-200">{stat.label}</span>{" "}
-                                        {stat.suffix}
-                                    </div>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
         </div>
     );
 };
