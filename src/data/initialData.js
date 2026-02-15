@@ -6,7 +6,7 @@ export const profiles = [
     icon: "https://pngimg.com/uploads/github/github_PNG40.png",
     type: "Code Repository",
   },
-    {
+  {
     name: "MyDevArchive",
     description: "Verified achievements. Documented growth.",
     link: "https://mydevarchive.vercel.app/",
