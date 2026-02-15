@@ -6,6 +6,13 @@ export const profiles = [
     icon: "https://pngimg.com/uploads/github/github_PNG40.png",
     type: "Code Repository",
   },
+    {
+    name: "MyDevArchive",
+    description: "Verified achievements. Documented growth.",
+    link: "https://mydevarchive.vercel.app/",
+    icon: "https://vectorified.com/images/google-docs-icon-32.png",
+    type: "Portfolio",
+  },
   {
     name: "Codolio",
     description: "Portfolio and coding profile showcase",
