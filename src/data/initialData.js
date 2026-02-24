@@ -42,6 +42,13 @@ export const profiles = [
     type: "Learning Platform",
   },
   {
+    name:"Kaggle",
+    description:"Data science competitions and projects",
+    link:"https://www.kaggle.com/imanchalsingh",
+    icon:"https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/189_Kaggle_logo_logos-1024.png",
+    type:"Data Science",
+  },
+  {
     name: "InterviewBit",
     description: "Coding interview preparation platform",
     link: "https://www.interviewbit.com/profile/anchal-singh_974",
