@@ -4,7 +4,7 @@ import { profiles } from '../data/initialData';
 const ProfileDashboard = () => {
   const [selectedType, setSelectedType] = useState('all');
   const [viewMode, setViewMode] = useState('grid'); // grid or list
-  
+
   const types = useMemo(() => {
     const allTypes = profiles.map(p => p.type);
     return ['all', ...new Set(allTypes)];
@@ -26,7 +26,7 @@ const ProfileDashboard = () => {
   return (
     <div className="min-h-screen bg-zinc-900">
       {/* Bold Header with diagonal split */}
-      <div className="relative bg-gradient-to-r from-purple-600 to-orange-500 h-48 overflow-hidden">
+      <div className="relative bg-linear-to-r from-purple-600 to-orange-500 h-48 overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute -right-10 -top-10 w-40 h-40 bg-white rounded-full blur-3xl"></div>
           <div className="absolute -left-10 -bottom-10 w-40 h-40 bg-orange-300 rounded-full blur-3xl"></div>
@@ -53,34 +53,30 @@ const ProfileDashboard = () => {
             <div className="flex-1 flex flex-wrap gap-2">
               <button
                 onClick={() => setSelectedType('all')}
-                className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
-                  selectedType === 'all'
+                className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${selectedType === 'all'
                     ? 'bg-purple-600 text-white shadow-lg shadow-purple-600/30'
                     : 'bg-zinc-800 text-zinc-400 hover:text-white border border-zinc-700'
-                }`}
+                  }`}
               >
                 All
-                <span className={`ml-2 px-2 py-0.5 rounded-full text-xs ${
-                  selectedType === 'all' ? 'bg-purple-500' : 'bg-zinc-700 text-zinc-300'
-                }`}>
+                <span className={`ml-2 px-2 py-0.5 rounded-full text-xs ${selectedType === 'all' ? 'bg-purple-500' : 'bg-zinc-700 text-zinc-300'
+                  }`}>
                   {profiles.length}
                 </span>
               </button>
-              
+
               {types.filter(t => t !== 'all').map(type => (
                 <button
                   key={type}
                   onClick={() => setSelectedType(type)}
-                  className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${
-                    selectedType === type
+                  className={`px-4 py-2 rounded-lg font-medium text-sm transition-all ${selectedType === type
                       ? 'bg-orange-500 text-white shadow-lg shadow-orange-500/30'
                       : 'bg-zinc-800 text-zinc-400 hover:text-white border border-zinc-700'
-                  }`}
+                    }`}
                 >
                   {type}
-                  <span className={`ml-2 px-2 py-0.5 rounded-full text-xs ${
-                    selectedType === type ? 'bg-orange-400' : 'bg-zinc-700 text-zinc-300'
-                  }`}>
+                  <span className={`ml-2 px-2 py-0.5 rounded-full text-xs ${selectedType === type ? 'bg-orange-400' : 'bg-zinc-700 text-zinc-300'
+                    }`}>
                     {typeCounts[type]}
                   </span>
                 </button>
@@ -91,9 +87,8 @@ const ProfileDashboard = () => {
             <div className="flex items-center gap-2 bg-zinc-800 p-1 rounded-lg border border-zinc-700">
               <button
                 onClick={() => setViewMode('grid')}
-                className={`p-2 rounded-md transition-colors ${
-                  viewMode === 'grid' ? 'bg-purple-600 text-white' : 'text-zinc-400 hover:text-white'
-                }`}
+                className={`p-2 rounded-md transition-colors ${viewMode === 'grid' ? 'bg-purple-600 text-white' : 'text-zinc-400 hover:text-white'
+                  }`}
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
@@ -101,9 +96,8 @@ const ProfileDashboard = () => {
               </button>
               <button
                 onClick={() => setViewMode('list')}
-                className={`p-2 rounded-md transition-colors ${
-                  viewMode === 'list' ? 'bg-orange-500 text-white' : 'text-zinc-400 hover:text-white'
-                }`}
+                className={`p-2 rounded-md transition-colors ${viewMode === 'list' ? 'bg-orange-500 text-white' : 'text-zinc-400 hover:text-white'
+                  }`}
               >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -123,37 +117,36 @@ const ProfileDashboard = () => {
                 href={profile.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group relative bg-zinc-800 border-2 border-zinc-700 hover:border-purple-600 rounded-xl p-6 transition-all hover:translate-y-[-2px]"
+                className="group relative bg-zinc-800 border-2 border-zinc-700 hover:border-purple-600 rounded-xl p-6 transition-all hover:translate-y-0.5"
               >
                 {/* Decorative element */}
-                <div className="absolute top-0 right-0 w-16 h-16 bg-gradient-to-br from-purple-600/20 to-orange-500/20 rounded-bl-3xl rounded-tr-xl"></div>
-                
+                <div className="absolute top-0 right-0 w-16 h-16 bg-linear-to-br from-purple-600/20 to-orange-500/20 rounded-bl-3xl rounded-tr-xl"></div>
+
                 <div className="relative">
                   <div className="flex items-start justify-between mb-3">
-                    <div className="w-12 h-12 bg-gradient-to-br from-purple-600 to-orange-500 rounded-xl flex items-center justify-center shadow-lg">
+                    <div className="w-12 h-12 bg-linear-to-br from-purple-600 to-orange-500 rounded-xl flex items-center justify-center shadow-lg">
                       <span className="text-white font-bold text-xl">
                         {profile.name.charAt(0).toUpperCase()}
                       </span>
                     </div>
-                    <span className={`text-xs font-bold px-3 py-1 rounded-full ${
-                      i % 2 === 0 
-                        ? 'bg-purple-600/20 text-purple-300 border border-purple-600/30' 
+                    <span className={`text-xs font-bold px-3 py-1 rounded-full ${i % 2 === 0
+                        ? 'bg-purple-600/20 text-purple-300 border border-purple-600/30'
                         : 'bg-orange-600/20 text-orange-300 border border-orange-600/30'
-                    }`}>
+                      }`}>
                       {profile.type}
                     </span>
                   </div>
-                  
+
                   <h3 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400 transition-colors">
                     {profile.name}
                   </h3>
-                  
+
                   {profile.description && (
                     <p className="text-sm text-zinc-400 mb-4 line-clamp-2">
                       {profile.description}
                     </p>
                   )}
-                  
+
                   <div className="flex items-center text-sm text-orange-500 font-medium">
                     <span>View profile</span>
                     <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -176,14 +169,13 @@ const ProfileDashboard = () => {
                 className="group block bg-zinc-800 border border-zinc-700 hover:border-orange-500 rounded-xl p-4 transition-all"
               >
                 <div className="flex items-center gap-4">
-                  <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${
-                    i % 2 === 0 ? 'bg-purple-600' : 'bg-orange-500'
-                  }`}>
+                  <div className={`w-10 h-10 rounded-lg flex items-center justify-center ${i % 2 === 0 ? 'bg-purple-600' : 'bg-orange-500'
+                    }`}>
                     <span className="text-white font-bold">
                       {profile.name.charAt(0).toUpperCase()}
                     </span>
                   </div>
-                  
+
                   <div className="flex-1 min-w-0">
                     <div className="flex items-center gap-2">
                       <h3 className="text-white font-semibold truncate group-hover:text-orange-400 transition-colors">
@@ -192,14 +184,14 @@ const ProfileDashboard = () => {
                       <span className="text-xs text-zinc-500">·</span>
                       <span className="text-xs text-zinc-400">{profile.type}</span>
                     </div>
-                    
+
                     {profile.description && (
                       <p className="text-sm text-zinc-500 truncate">
                         {profile.description}
                       </p>
                     )}
                   </div>
-                  
+
                   <svg className="w-5 h-5 text-zinc-600 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
@@ -219,7 +211,7 @@ const ProfileDashboard = () => {
             <p className="text-zinc-400 mb-4">Try selecting a different category</p>
             <button
               onClick={() => setSelectedType('all')}
-              className="px-6 py-3 bg-gradient-to-r from-purple-600 to-orange-500 text-white font-bold rounded-xl hover:shadow-lg transition-all"
+              className="px-6 py-3 bg-linear-to-r from-purple-600 to-orange-500 text-white font-bold rounded-xl hover:shadow-lg transition-all"
             >
               View all profiles
             </button>
