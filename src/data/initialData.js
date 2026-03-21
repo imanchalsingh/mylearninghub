@@ -28,6 +28,13 @@ export const profiles = [
     type: "Competitive Programming",
   },
   {
+    name: "Dev Challenges",
+    description: "Developement Challenges and Debugging",
+    link: "https://devchallenges.io/profile/703e65d6-1da9-46fe-af97-0b1d7835ea58",
+    icon: "https://webcurate.co/assets/images/tool-favicons/xMD9c0f.webp",
+    type: "Competitive Development"
+  },
+  {
     name: "GeeksforGeeks",
     description: "Data structures and algorithm practice",
     link: "https://auth.geeksforgeeks.org/user/imanchalsingh",
